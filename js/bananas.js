@@ -32,9 +32,9 @@
         makeTwitterRequest: function() {
             var apiUrl      = 'http://search.twitter.com/search.json?callback=?',
                 query       = {q: "%23enirobananer", include_entities: "true", rpp: "2"},
-                callback    = '';
+                callback    = Bananas.handleBananaInfo;
 
-            jQuery.getJSON(apiUrl, query, Bananas.handleBananaInfo);
+            jQuery.getJSON(apiUrl, query, callback);
         },
 
         /**
