@@ -49,7 +49,7 @@
             if(tweet && tweet.text && tweet.created_at) {
                 // find number
                 bananaStr = tweet.text.match(/\d+/);
-                numberOfBananas = bananaStr ? bananaStr[0] : 0; // bananaStr[0] || 0 ??
+                numberOfBananas = bananaStr ? bananaStr[0] : 0;
                     
                 dateTweet  = new Date(tweet.created_at);
                 dateNow    = new Date();
